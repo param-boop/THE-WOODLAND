@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Woodland</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #4CAF50;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .qr-code img {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            height: auto;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Woodland</h1>
+        <p>Experience the finest dining with a touch of elegance.</p>
+    </header>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>The Woodland is a premier dining experience offering a diverse selection of cuisines. Our commitment to quality and creativity makes every meal memorable.</p>
+    </section>
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>Explore our menu featuring dishes crafted with the finest ingredients. From appetizers to desserts, we have something for everyone.</p>
+        <ul>
+            <li>Starter: Classic Terrine</li>
+            <li>Main: Fish Tacos</li>
+            <li>Dessert: Chocolate Mousse</li>
+        </ul>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <img src="dish1.jpg" alt="Dish 1">
+        <img src="dish2.jpg" alt="Dish 2">
+        <img src="dish3.jpg" alt="Dish 3">
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@thewoodland.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <div class="qr-code">
+            <h3>Scan to Visit Our Website</h3>
+            <img src="TheWoodland_QRCode.png" alt="QR Code to The Woodland Website">
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 The Woodland. All rights reserved.</p>
+    </footer>
+</body>
+</html>
